@@ -68,13 +68,13 @@ public class OfficeApplication implements CommandLineRunner {
 
 		logger.info("================ findByName =================");
 		for (Employee emp : empRepository.findByName("B.O.B")) {
-			logger.info("Employee's name: {}, Salary: {}, Department: {}, Project: {}",
+			logger.info("Employee's name: {}, Salary: {}",
 			emp.getName(), emp.getSalary());
 		}
 
 		logger.info("================ findBySalaryGreaterThan =================");
 		for (Employee emp : empRepository.findBySalaryGreaterThan(11000)) {
-			logger.info("Employee's name: {}, Salary: {}, Department: {}, Project: {}",
+			logger.info("Employee's name: {}, Salary: {}",
 			emp.getName(), emp.getSalary());
 		}
 		
